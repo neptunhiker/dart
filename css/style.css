@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffff00;
+    color: rgb(60, 60, 60);
+    font-size: 130%;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 2px #222;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.verticalspacer {
+    height: 50px;
+}
+
+#header-nav {
+    background-color: rgb(220,220,200);
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    background-image: url('../images/test.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 50px;
+}
+
+.addingplayers {
+    margin-top: 100px;
+}
+
+.addingplayers_new {
+    margin-top: 50px;
+}
+
+.row {
+    margin-bottom: 5px;
+}
+
+.first-button {
+    margin-top: 10px;
+}
+
+.player {
+    text-align: center;
+    font-weight: bold;
+}
+
+.setuprow {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#maincontent {
+    border-top: solid 1px black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px black;
+}
+
+.points {
+    text-align: center;
+    height: 80px;
+    border: black solid 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.score {
+    color: red;
+}
+
+#startgame {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.row.rowbuttonstartgame {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+/*    background-color: black;
+    color: white;*/
+}
+
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: rgb(220,220,220);
+    border-top: 0;
+}
+
+#contact > span, #impressum > span {
+    font-size: 1.3em;
+}
+
+canvas {
+    width: 120px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 190%;
+}

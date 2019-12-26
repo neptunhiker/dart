@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dart</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</head>
+<body>
+
+<h1>Witamy w turnieju Dart Janusza</h1>
+
+<div id="setup" class="container addingplayers">
+    <div class="row setuprow">
+        <input class="col" id="playername" type="text">
+        <button id="addplayer" class="col btn btn-outline-dark">Dodaj graczy</button>
+    </div>
+    <div class="row setuprow">
+        <div id="playeraddedmessage" class="col"></span>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row playerlist" id="playerlist">
+<!-- will be filled by javascript with player names -->
+    </div>
+    <div class="row playerscores" id="playerscores">
+<!-- will be filled by javascript with player scores -->
+    </div>
+    <div class="row rowbuttonstartgame">
+        <button id="startgame" class="col btn btn-outline-dark">Gramy w darta!</button>
+    </div>
+</div>
+
+<div  class="verticalspacer"></div>
+
+<div class="container" id="maincontent">
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <button onclick="recordpoints(0);" class="col-4 btn-dark points" id="points0">0</button>
+                <button onclick="recordpoints(1);" class="col-4 btn-dark points" id="points1">1</button>
+                <button onclick="recordpoints(2);" class="col-4 btn-dark points" id="points2">2</button>
+                <button onclick="recordpoints(3);" class="col-4 btn-dark points" id="points3">3</button>
+                <button onclick="recordpoints(4);" class="col-4 btn-dark points" id="points4">4</button>
+                <button onclick="recordpoints(5);" class="col-4 btn-dark points" id="points5">5</button>
+                <button onclick="recordpoints(6);" class="col-4 btn-dark points" id="points6">6</button>
+                <button onclick="recordpoints(7);" class="col-4 btn-dark points" id="points7">7</button>
+                <button onclick="recordpoints(8);" class="col-4 btn-dark points" id="points8">8</button>
+                <button onclick="recordpoints(9);" class="col-4 btn-dark points" id="points9">9</button>
+                <button onclick="recordpoints(10);" class="col-4 btn-dark points" id="points10">10</button>
+                <button onclick="recordpoints(30);" class="col-4 btn-dark points" id="points30">30</button>
+                <button onclick="recordpoints(50);" class="col-12 btn-dark points" id="points50">50</button>
+            </div>
+        </div>
+        <div class="col-6 tester">
+            <div class="row">
+                <canvas class="col" id="line-chart" width="400" height="280"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="verticalspacer"></div>
+<div class="container">
+    <div class="row rowbuttonstartgame">
+        <button id="restartgame" class="col btn btn-outline-dark">Nowa gra!</button>
+    </div>
+</div>
+
+
+    <!-- jQuery (Bootstrap JS plugin depend on it) -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
